@@ -88,7 +88,7 @@ For fast comparison, you can use the `.isZero()` function that doesn't require a
 BigInt<16> num = "321456456546";
 
 // Prints 0 for false, the number is not zero
-cout << num.isZero() << endl
+cout << num.isZero() << endl;
 ```
 
 ## Logical Operators
@@ -111,7 +111,7 @@ true
 ```
 
 ## Additional Features
-You can generate random Big Ints with a template Rand function. You can seed the default c rand function with `srand` to set the seed for this function.
+You can generate random Big Ints with a template Rand function. You can seed the default c rand function with `srand()` to set the seed for this function.
 ```c++
 srand(1234);
 BigInt<256> rnum = rand<256>();
@@ -120,5 +120,5 @@ BigInt<256> rnum = rand<256>();
 There is a pow function implemented for Big Ints. You need to provide the result's size as a template parameter, then supply the parameters
 ```c++
 // 123^456
-BigInt<512> num = pow<512>("123", "456")
+BigInt<512> num = pow<512>("123", "456");
 ```
